@@ -1,0 +1,15 @@
+#在application.properties/或者application.yml文件中没有添加数据库配置信息.
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gy
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    #驼峰命名法
+server:
+  port: 8080
